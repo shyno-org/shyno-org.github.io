@@ -1,0 +1,15 @@
+{
+  "short_name": "Shyno",
+  "name": "Shyno - Web, Mobile and Automation Solutions",
+  "icons": [
+    {
+      "src": "assets/images/icon.png",
+      "sizes": "3352x2768",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
