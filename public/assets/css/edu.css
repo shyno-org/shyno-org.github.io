@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Calligraffitti|Mali");
+:root {
+  --custYellow: #fdbe02;
+  --custWhite: #fff;
+  --custBlack: #071013;
+}
+
+.banner {
+  min-height: calc(100vh - 101px);
+  background: url("../img/banner4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.btn-yellow {
+  background: var(--custYellow);
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: var(--custBlack);
+  border-radius:50px 20px!important;
+}
+.btn-yellow:hover {
+  background: var(--custBlack);
+  color: var(--custYellow);
+}
+.about-img__container {
+  position: relative;
+}
+.about-img__container::before {
+  content: "";
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: 5px solid var(--custYellow);;
+  outline: 0.3rem solid var(--custYellow);;
+}

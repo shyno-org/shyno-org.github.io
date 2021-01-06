@@ -1,21 +1,33 @@
-import About from './Components/About'
-import Contact from './Components/Contact'
-import Footer from './Components/Footer'
-import Header from './Components/Header'
-import Preloader from './Components/Preloader'
-import Services from './Components/Services'
-import Welcome from './Components/Welcome'
-
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
+import Preloader from "./Components/Preloader";
+import Contact from "./Components/Contact";
+import Education from './Components/Education';
+import About from "./Components/About";
+import Welcome from "./Components/Welcome";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 function App() {
   return (
     <>
-      <Preloader />
-      <Header />
-      <Welcome />
-      <About />
-      <Services />
-      <Contact />
-      <Footer />
+      <Router>
+        <Preloader />
+        <Header />
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/education">
+            <Education />
+          </Route>
+          <Route path="/">
+            <Welcome />
+          </Route>
+        </Switch>
+        <Footer />
+      </Router>
     </>
   );
 }
