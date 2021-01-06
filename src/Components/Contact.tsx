@@ -2,19 +2,20 @@ import React from 'react'
 
 const Contact = () => {
     return (
-      <section className="section" id="contact-us">
+      <section className="section" id="contact-us" style={{ paddingTop: 80 }}>
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-6 col-md-6 col-sm-12">
               <div id="map">
                 <iframe
                   title="Address on Google Map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.8129979223822!2d88.25333021386173!3d24.10807088093779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f97dc2e19b045b%3A0x60f3407f6fcbfa51!2s61%2F12%2C%20A%20C%20Rd%2C%20Indraprastha%2C%20Khagra%2C%20Berhampore%2C%20West%20Bengal%20742103!5e0!3m2!1sen!2sin!4v1605424794237!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2797.841546881993!2d9.225740432739258!3d45.47299575805664!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f97db1e358310d%3A0x68b454664420aa24!2sShyno!5e0!3m2!1sen!2sin!4v1609963635763!5m2!1sen!2sin"
                   width="100%"
                   height="500px"
                   frameBorder="0"
                   style={{ border: 0 }}
-                  allowFullScreen
+                  allowFullScreen={true}
+                  aria-hidden="false"
                 ></iframe>
               </div>
             </div>

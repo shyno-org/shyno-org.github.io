@@ -1,5 +1,4 @@
-import React from 'react'
-
+import Services from './Services'
 const About = () => {
     return (
       <>
@@ -100,6 +99,7 @@ const About = () => {
             </div>
           </div>
         </section>
+        <Services />
       </>
     );
 }

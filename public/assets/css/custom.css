@@ -340,7 +340,7 @@ header
 
 .header-area .main-nav .logo {
   line-height: 80px;
-  color: #fff;
+  color: #000;
   font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
@@ -378,7 +378,7 @@ header
   display: block;
   font-weight: 500;
   font-size: 13px;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -403,14 +403,14 @@ header
   font-family: FontAwesome;
   content: "\f107";
   font-size: 12px;
-  color: #fff;
+  color: #000;
   position: absolute;
   right: 18px;
   top: 12px;
 }
 
 .header-area.background-header .main-nav .nav li.submenu:after {
-  color: #fff;
+  color: #000;
 }
 
 .header-area .main-nav .nav li.submenu ul {
@@ -735,7 +735,7 @@ TRY IT ... with or without CENTER CENTER
 
 .welcome-area .header-text {
   position: absolute;
-  top: 55%;
+  top: 60%;
   transform: translateY(-60%);
   text-align: left;
   width: 100%;
