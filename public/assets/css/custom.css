@@ -89,7 +89,7 @@ ul,
 li,
 figure,
 header,
-nav,
+nav-old,
 section,
 article,
 aside,
@@ -130,7 +130,7 @@ li {
 }
 
 header,
-nav,
+nav-old,
 section,
 article,
 aside,
@@ -293,7 +293,7 @@ header
 --------------------------------------------- 
 */
 
-.background-header {
+.background-header-old {
   background-color: #555;
   height: 80px !important;
   position: fixed !important;
@@ -303,20 +303,20 @@ header
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
 }
 
-.background-header .logo,
-.background-header .main-nav .nav li a {
+.background-header-old .logo,
+.background-header-old .main-nav-old .nav-old li a {
   color: #fafafa !important;
 }
 
-.background-header .main-nav .nav > li:hover > a {
+.background-header-old .main-nav-old .nav-old > li:hover > a {
   color: #f55858 !important;
 }
 
-.background-header .main-nav .nav > li > ul > li:hover > a {
+.background-header-old .main-nav-old .nav-old > li > ul > li:hover > a {
   color: #f55858 !important;
 }
 
-.background-header .nav li a.active {
+.background-header-old .nav-old li a.active {
   color: #f55858 !important;
 }
 
@@ -333,12 +333,12 @@ header
   transition: all 0.5s ease 0s;
 }
 
-.header-area .main-nav {
+.header-area .main-nav-old {
   min-height: 80px;
   background: transparent;
 }
 
-.header-area .main-nav .logo {
+.header-area .main-nav-old .logo {
   line-height: 80px;
   color: #000;
   font-size: 28px;
@@ -352,7 +352,7 @@ header
   transition: all 0.3s ease 0s;
 }
 
-.header-area .main-nav .nav {
+.header-area .main-nav-old .nav-old {
   float: right;
   margin-top: 27px;
   margin-left: 20px;
@@ -365,16 +365,16 @@ header
   z-index: 999;
 }
 
-.header-area .main-nav .nav li {
+.header-area .main-nav-old .nav-old li {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.header-area .main-nav .nav li:last-child {
+.header-area .main-nav-old .nav-old li:last-child {
   padding-right: 0px;
 }
 
-.header-area .main-nav .nav li a {
+.header-area .main-nav-old .nav-old li a {
   display: block;
   font-weight: 500;
   font-size: 13px;
@@ -390,16 +390,16 @@ header
   letter-spacing: 1px;
 }
 
-.header-area .main-nav .nav li:hover a {
+.header-area .main-nav-old .nav-old li:hover a {
   color: #f55858;
 }
 
-.header-area .main-nav .nav li.submenu {
+.header-area .main-nav-old .nav-old li.submenu {
   position: relative;
   padding-right: 35px;
 }
 
-.header-area .main-nav .nav li.submenu:after {
+.header-area .main-nav-old .nav-old li.submenu:after {
   font-family: FontAwesome;
   content: "\f107";
   font-size: 12px;
@@ -409,11 +409,11 @@ header
   top: 12px;
 }
 
-.header-area.background-header .main-nav .nav li.submenu:after {
+.header-area.background-header-old .main-nav-old .nav-old li.submenu:after {
   color: #000;
 }
 
-.header-area .main-nav .nav li.submenu ul {
+.header-area .main-nav-old .nav-old li.submenu ul {
   position: absolute;
   width: 200px;
   box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
@@ -427,13 +427,13 @@ header
     z-index 0s linear 0.01s;
 }
 
-.header-area .main-nav .nav li.submenu ul li {
+.header-area .main-nav-old .nav-old li.submenu ul li {
   margin-left: 0px;
   padding-left: 0px;
   padding-right: 0px;
 }
 
-.header-area .main-nav .nav li.submenu ul li a {
+.header-area .main-nav-old .nav-old li.submenu ul li a {
   display: block;
   background: #fff;
   color: #3b566e;
@@ -449,7 +449,7 @@ header
   border-bottom: 1px solid #f5f5f5;
 }
 
-.header-area .main-nav .nav li.submenu ul li a:before {
+.header-area .main-nav-old .nav-old li.submenu ul li a:before {
   content: "";
   position: absolute;
   width: 0px;
@@ -464,17 +464,17 @@ header
   background: #f55858;
 }
 
-.header-area .main-nav .nav li.submenu ul li a:hover {
+.header-area .main-nav-old .nav-old li.submenu ul li a:hover {
   background: #fff;
   color: #f55858;
   padding-left: 25px;
 }
 
-.header-area .main-nav .nav li.submenu ul li a:hover:before {
+.header-area .main-nav-old .nav-old li.submenu ul li a:hover:before {
   width: 3px;
 }
 
-.header-area .main-nav .nav li.submenu:hover ul {
+.header-area .main-nav-old .nav-old li.submenu:hover ul {
   visibility: visible;
   opacity: 1;
   z-index: 1;
@@ -482,7 +482,7 @@ header
   transition-delay: 0s, 0s, 0.3s;
 }
 
-.header-area .main-nav .menu-trigger {
+.header-area .main-nav-old .menu-trigger {
   cursor: pointer;
   display: block;
   position: absolute;
@@ -495,9 +495,9 @@ header
   display: none;
 }
 
-.header-area .main-nav .menu-trigger span,
-.header-area .main-nav .menu-trigger span:before,
-.header-area .main-nav .menu-trigger span:after {
+.header-area .main-nav-old .menu-trigger span,
+.header-area .main-nav-old .menu-trigger span:before,
+.header-area .main-nav-old .menu-trigger span:after {
   -moz-transition: all 0.4s;
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
@@ -510,14 +510,14 @@ header
   left: 0;
 }
 
-.background-header .main-nav .menu-trigger span,
-.background-header .main-nav .menu-trigger span:before,
-.background-header .main-nav .menu-trigger span:after {
+.background-header-old .main-nav-old .menu-trigger span,
+.background-header-old .main-nav-old .menu-trigger span:before,
+.background-header-old .main-nav-old .menu-trigger span:after {
   background-color: #1e1e1e;
 }
 
-.header-area .main-nav .menu-trigger span:before,
-.header-area .main-nav .menu-trigger span:after {
+.header-area .main-nav-old .menu-trigger span:before,
+.header-area .main-nav-old .menu-trigger span:after {
   -moz-transition: all 0.4s;
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
@@ -531,21 +531,21 @@ header
   width: 75%;
 }
 
-.background-header .main-nav .menu-trigger span:before,
-.background-header .main-nav .menu-trigger span:after {
+.background-header-old .main-nav-old .menu-trigger span:before,
+.background-header-old .main-nav-old .menu-trigger span:after {
   background-color: #1e1e1e;
 }
 
-.header-area .main-nav .menu-trigger span:before,
-.header-area .main-nav .menu-trigger span:after {
+.header-area .main-nav-old .menu-trigger span:before,
+.header-area .main-nav-old .menu-trigger span:after {
   content: "";
 }
 
-.header-area .main-nav .menu-trigger span {
+.header-area .main-nav-old .menu-trigger span {
   top: 16px;
 }
 
-.header-area .main-nav .menu-trigger span:before {
+.header-area .main-nav-old .menu-trigger span:before {
   -moz-transform-origin: 33% 100%;
   -ms-transform-origin: 33% 100%;
   -webkit-transform-origin: 33% 100%;
@@ -554,7 +554,7 @@ header
   z-index: 10;
 }
 
-.header-area .main-nav .menu-trigger span:after {
+.header-area .main-nav-old .menu-trigger span:after {
   -moz-transform-origin: 33% 0;
   -ms-transform-origin: 33% 0;
   -webkit-transform-origin: 33% 0;
@@ -562,14 +562,14 @@ header
   top: 10px;
 }
 
-.header-area .main-nav .menu-trigger.active span,
-.header-area .main-nav .menu-trigger.active span:before,
-.header-area .main-nav .menu-trigger.active span:after {
+.header-area .main-nav-old .menu-trigger.active span,
+.header-area .main-nav-old .menu-trigger.active span:before,
+.header-area .main-nav-old .menu-trigger.active span:after {
   background-color: transparent;
   width: 100%;
 }
 
-.header-area .main-nav .menu-trigger.active span:before {
+.header-area .main-nav-old .menu-trigger.active span:before {
   -moz-transform: translateY(6px) translateX(1px) rotate(45deg);
   -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
   -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
@@ -577,11 +577,11 @@ header
   background-color: #fff;
 }
 
-.background-header .main-nav .menu-trigger.active span:before {
+.background-header-old .main-nav-old .menu-trigger.active span:before {
   background-color: #1e1e1e;
 }
 
-.header-area .main-nav .menu-trigger.active span:after {
+.header-area .main-nav-old .menu-trigger.active span:after {
   -moz-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
@@ -589,7 +589,7 @@ header
   background-color: #fff;
 }
 
-.background-header .main-nav .menu-trigger.active span:after {
+.background-header-old .main-nav-old .menu-trigger.active span:after {
   background-color: #1e1e1e;
 }
 
@@ -597,20 +597,20 @@ header
   min-height: 80px;
 }
 
-.header-area.header-sticky .nav {
+.header-area.header-sticky .nav-old {
   margin-top: 20px !important;
 }
 
-.header-area.header-sticky .nav li a.active {
+.header-area.header-sticky .nav-old li a.active {
   color: #f55858;
 }
 
 @media (max-width: 1200px) {
-  .header-area .main-nav .nav li {
+  .header-area .main-nav-old .nav-old li {
     padding-left: 12px;
     padding-right: 12px;
   }
-  .header-area .main-nav:before {
+  .header-area .main-nav-old:before {
     display: none;
   }
 }
@@ -631,10 +631,10 @@ header
   .header-area .menu-trigger {
     display: block !important;
   }
-  .header-area .main-nav {
+  .header-area .main-nav-old {
     overflow: hidden;
   }
-  .header-area .main-nav .nav {
+  .header-area .main-nav-old .nav-old {
     float: none;
     width: 100%;
     margin-top: 80px !important;
@@ -645,17 +645,17 @@ header
     transition: all 0s ease 0s;
     margin-left: 0px;
   }
-  .header-area .main-nav .nav li:first-child {
+  .header-area .main-nav-old .nav-old li:first-child {
     border-top: 1px solid #eee;
   }
-  .header-area .main-nav .nav li {
+  .header-area .main-nav-old .nav-old li {
     width: 100%;
     background: #fff;
     border-bottom: 1px solid #eee;
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
-  .header-area .main-nav .nav li a {
+  .header-area .main-nav-old .nav-old li a {
     height: 50px !important;
     line-height: 50px !important;
     padding: 0px !important;
@@ -663,14 +663,14 @@ header
     background: #fff !important;
     color: #3b566e !important;
   }
-  .header-area .main-nav .nav li a:hover {
+  .header-area .main-nav-old .nav-old li a:hover {
     background: #eee !important;
   }
-  .header-area .main-nav .nav > li > a:hover,
-  .header-area .main-nav .nav .submenu > ul > li > a:hover {
+  .header-area .main-nav-old .nav-old > li > a:hover,
+  .header-area .main-nav-old .nav-old .submenu > ul > li > a:hover {
     color: #f55858;
   }
-  .header-area .main-nav .nav li.submenu ul {
+  .header-area .main-nav-old .nav-old li.submenu ul {
     position: relative;
     visibility: inherit;
     opacity: 1;
@@ -682,30 +682,30 @@ header
     box-shadow: none;
     height: 0px;
   }
-  .header-area .main-nav .nav li.submenu ul li a {
+  .header-area .main-nav-old .nav-old li.submenu ul li a {
     font-size: 12px;
     font-weight: 400;
   }
-  .header-area .main-nav .nav li.submenu ul li a:hover:before {
+  .header-area .main-nav-old .nav-old li.submenu ul li a:hover:before {
     width: 0px;
   }
-  .header-area .main-nav .nav li.submenu ul.active {
+  .header-area .main-nav-old .nav-old li.submenu ul.active {
     height: auto !important;
   }
-  .header-area .main-nav .nav li.submenu:after {
+  .header-area .main-nav-old .nav-old li.submenu:after {
     color: #3b566e;
     right: 25px;
     font-size: 14px;
     top: 15px;
   }
-  .header-area .main-nav .nav li.submenu:hover ul,
-  .header-area .main-nav .nav li.submenu:focus ul {
+  .header-area .main-nav-old .nav-old li.submenu:hover ul,
+  .header-area .main-nav-old .nav-old li.submenu:focus ul {
     height: 0px;
   }
 }
 
 @media (min-width: 992px) {
-  .header-area .main-nav .nav {
+  .header-area .main-nav-old .nav-old {
     display: flex !important;
   }
 }
@@ -730,7 +730,7 @@ TRY IT ... with or without CENTER CENTER
   background-size: cover;
   width: 100%;
   height: 105vh;
-  margin-top: -10vh;
+  /* margin-top: -10vh; */
 }
 
 .welcome-area .header-text {
@@ -1053,7 +1053,7 @@ services
   position: relative;
 }
 
-.owl-carousel .owl-nav button.owl-next span {
+.owl-carousel .owl-nav-old button.owl-next span {
   top: 32%;
   border-radius: 50%;
   font-size: 36px;
@@ -1068,7 +1068,7 @@ services
   position: absolute;
 }
 
-.owl-carousel .owl-nav button.owl-prev span {
+.owl-carousel .owl-nav-old button.owl-prev span {
   top: 32%;
   border-radius: 50%;
   font-size: 36px;
@@ -1084,7 +1084,7 @@ services
 }
 
 @media screen and (max-width: 1320px) {
-  .owl-carousel .owl-nav {
+  .owl-carousel .owl-nav-old {
     display: none !important;
   }
 }
