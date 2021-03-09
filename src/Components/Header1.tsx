@@ -43,15 +43,15 @@ const Header = () => {
               </Link>
             </Nav.Item>
             <Nav.Item>
-              <Link to="/products" className="btn shadow text-light m-1 p-1">
-                Products
-              </Link>
-            </Nav.Item>
-            <Nav.Item>
               <Link to="/education" className="btn shadow text-light m-1 p-1">
                 Education
               </Link>
             </Nav.Item>
+            {/* <Nav.Item>
+              <Link to="/products" className="btn shadow text-light m-1 p-1">
+                Products
+              </Link>
+            </Nav.Item> */}
             <Nav.Item>
               <Link to="/about" className="btn shadow text-light m-1 p-1">
                 About
