@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
     return (
-      <section className="section" id="contact-us" style={{ paddingTop: 80 }}>
+      <section className="section" id="contact-us">
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-6 col-md-6 col-sm-12">
