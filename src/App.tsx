@@ -5,6 +5,7 @@ import Contact from "./Components/Contact";
 import Education from './Components/Education';
 import About from "./Components/About";
 import Welcome from "./Components/Welcome";
+import Product from "./Components/Products";
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route path="/education">
             <Education />
+          </Route>
+          <Route path="/products">
+            <Product/>
           </Route>
           <Route path="/">
             <Welcome />

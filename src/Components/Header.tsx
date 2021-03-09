@@ -9,6 +9,7 @@ const Header = () => {
                         <Link to="/" className="logo"><img src="assets/images/icon.png" alt="Shyno icon" height="70px" width="auto" style={{position: 'fixed', left: 10, top: 5}}></img></Link>
                         <ul className="nav">
                             <li className="scroll-to-section"><Link to="/">Home</Link></li>
+                            <li className="scroll-to-section"><Link to="/products">Products</Link></li>
                             <li className="scroll-to-section"><Link to="/education">Education</Link></li>
                             <li className="scroll-to-section"><Link to="/about">About</Link></li>
                             <li className="scroll-to-section"><Link to="/contact">Contact Us</Link></li>
